@@ -35,3 +35,9 @@ management:
     web:
       exposure:
         include: health,info,gateway
+
+gateway:
+  auth:
+    keys:
+      - ${GATEWAY_API_KEY_1:dev-key-payment-service}
+      - ${GATEWAY_API_KEY_2:dev-key-admin}
